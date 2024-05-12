@@ -3,12 +3,11 @@ body{
     font-size: 15px;
     font-family: Lexend Deca;
     font-weight: 400;
+    margin:0;
     min-height:100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:0;
-    font-optical-sizing: auto;
 }
 
 * {
@@ -23,8 +22,17 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
+    flex-direction: row;
     height:100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+@media (max-width:825px) {
+    .container-car {
+      flex-direction: column;
+    }
 }
 
 img{
@@ -39,8 +47,8 @@ img{
 
 .Sedans{
     background:hsl(31, 77%, 52%);
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    /*border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;*/
 }
 
 .SUVs{
@@ -49,8 +57,8 @@ img{
 
 .Luxury{
     background:hsl(179, 100%, 13%);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    /*border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;*/
 }
 
 h1{
