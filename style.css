@@ -2,14 +2,21 @@ body{
     background: white;
     font-size: 15px;
     font-family: Lexend Deca;
-    /*height:97vh; /*a cause de cette ligne le haut des div est coupé quand on réduit la fenêtre*/ 
+    font-weight: 400;
+    min-height:100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin:0;
+    font-optical-sizing: auto;
 }
 
 * {
     box-sizing: border-box;
+}
+
+.container{
+    height: 100%;
 }
 
 .container-car{
@@ -17,6 +24,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    height:100%;
 }
 
 img{
@@ -25,7 +33,7 @@ img{
 
 .car{
     max-width:290px;
-    min-width: 250px;/*Ne déborde pas des div quand on change la taille de l'écran mais le haut est coupé*/
+    min-width: 250px;
     height:470px;
 }
 
@@ -44,12 +52,6 @@ img{
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-
-/*.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}*/
 
 h1{
     font-family:Big Shoulders Display;
@@ -100,6 +102,5 @@ button:hover{
 .attribution {
     font-size: 11px; 
     text-align: center;
-    /*margin:auto;*/
 }
 .attribution a {color: hsl(228, 45%, 44%); }
