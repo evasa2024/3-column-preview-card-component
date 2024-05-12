@@ -1,0 +1,89 @@
+body{
+    background: white;
+    font-size: 15px;
+    font-family: Lexend Deca;
+    height:98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    margin:50px 48px 0px 48px;
+}
+
+div{
+    float: left;
+    width:20%;
+    height:470px;
+}
+#Sedans{
+    background:hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#SUVs{
+    background:hsl(184, 100%, 22%);
+}
+
+#Luxury{
+    background:hsl(179, 100%, 13%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+h1{
+    font-family:Big Shoulders Display;
+    color: hsl(0, 0%, 95%);
+    margin:25px 48px 0px 48px;
+    font-size: 35px;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    background:hsl(0, 0%, 95%);
+    border-radius: 50px;
+    border:none;
+    cursor:pointer;
+    font-size: 15px;
+    font-family: Lexend Deca;
+    margin:100px 48px 0px 48px;
+}
+
+.buttonSedans{
+    color: hsl(31, 77%, 52%);
+}
+
+.buttonSUVs{
+    color: hsl(184, 100%, 22%);
+}
+
+.buttonLuxury{
+    color: hsl(179, 100%, 13%);
+}
+
+button:hover{
+    color: hsl(0, 0%, 95%);
+    background: transparent;
+    border:2px solid hsl(0, 0%, 95%);
+}
+
+p{
+    margin:25px 47px 0px 45px;
+    font-weight: 400;
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center;
+    margin:auto
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
