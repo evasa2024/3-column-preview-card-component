@@ -8,29 +8,42 @@ body{
     align-items: center;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+
 img{
     margin:50px 40px 0px 40px;
 }
 
-div{
+.car{
     float: left;
     width:19%;
+    min-width: 250px;/*Ne déborde pas des div quand on change la taille de l'écran*/
     height:470px;
 }
-#Sedans{
+
+.Sedans{
     background:hsl(31, 77%, 52%);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
-#SUVs{
+.SUVs{
     background:hsl(184, 100%, 22%);
 }
 
-#Luxury{
+.Luxury{
     background:hsl(179, 100%, 13%);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 h1{
@@ -77,10 +90,11 @@ button:hover{
 }
 
 
-.attribution { 
-    font-size: 11px; text-align: center;
-    margin:auto
+
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+    /*margin:auto;*/
 }
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-}
+.attribution a {color: hsl(228, 45%, 44%); }
